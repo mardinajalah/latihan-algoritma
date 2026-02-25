@@ -29,13 +29,27 @@ import { LatihanAlgoritma } from "./latihan1/index";
 // end fizz buzz
 
 // start cari angka terbesar
-const jawaban7 = new LatihanAlgoritma(0, [10, 5, 7, 2, 8]);
+// const jawaban7 = new LatihanAlgoritma(0, [10, 5, 7, 2, 8]);
 
-const hasilLatihan7 = jawaban7.cariAngkaTerbesar();
+// const hasilLatihan7 = jawaban7.cariAngkaTerbesar();
 
-if(hasilLatihan7 !== undefined) {
-  console.log(`Angka terbesar adalah ${hasilLatihan7}`);
-} else {
-  console.log('Array kosong, tidak ada angka terbesar.');
-}
+// if(hasilLatihan7 !== undefined) {
+//   console.log(`Angka terbesar adalah ${hasilLatihan7}`);
+// } else {
+//   console.log('Array kosong, tidak ada angka terbesar.');
+// }
 // end cari angka terbesar
+
+// start cari angka terbesar kedua
+const jawaban8 = new LatihanAlgoritma(0, [4, 9, 7, 1]);
+
+const hasilLatihan8 = jawaban8.cariAngkaTerbesarKedua();
+
+if(hasilLatihan8 !== undefined) {
+  console.log(`Angka terbesar kedua adalah ${hasilLatihan8.terbesarKedua}`);
+  console.log(`Angka terbesar adalah ${hasilLatihan8.terbesar}`);
+  
+} else {
+  console.log('Array harus memiliki setidaknya dua elemen untuk mencari angka terbesar kedua.');
+}
+// end cari angka terbesar kedua

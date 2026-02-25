@@ -24,7 +24,7 @@ class LatihanAlgoritma {
   }
 
   public cariAngkaTerbesar(): number | undefined {
-    if( this.array.length === 0) {
+    if (this.array.length === 0) {
       return undefined;
     }
 
@@ -34,8 +34,32 @@ class LatihanAlgoritma {
         terbesar = this.array[i];
       }
     }
-    
+
     return terbesar;
+  }
+
+  public cariAngkaTerbesarKedua(): { terbesarKedua: number; terbesar: number } | undefined {
+    if (this.array.length < 2) {
+      return undefined;
+    }
+
+    let terbesar = -Infinity;
+    let terbesarKedua = -Infinity;
+
+    for (const num of this.array) {
+      if (num > terbesar) {
+        terbesarKedua = terbesar;
+        terbesar = num;
+      } else if (num > terbesarKedua && num !== terbesar) {
+        terbesarKedua = num;
+      }
+    }
+
+    if (terbesarKedua === -Infinity) {
+      return undefined;
+    }
+
+    return { terbesarKedua, terbesar };
   }
 }
 
