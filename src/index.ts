@@ -1,4 +1,4 @@
-import { hitung } from "./latihan3";
+import { solution } from "./latihan4";
 
-const hasil = hitung(4)
+const hasil = solution(10);
 console.log(hasil);
