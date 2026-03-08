@@ -1,4 +1,4 @@
-import { solution, narcissistic } from '../src/latihan4';
+import { solution, narcissistic } from '../latihan4';
 
 describe('latihan 4', () => {
   it('kelipatan 3 dan 5', () => {
