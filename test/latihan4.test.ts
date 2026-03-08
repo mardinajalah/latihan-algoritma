@@ -1,8 +1,14 @@
-import { solution } from "../src/latihan4"
+import { solution, narcissistic } from '../src/latihan4';
 
 describe('latihan 4', () => {
-  it('hitung kelipatan 3 dan 5', () => {
-    const hasil = solution(10)
-    expect(hasil).toBe(23)
-  })
-})
+  it('kelipatan 3 dan 5', () => {
+    const hasil = solution(10);
+    expect(hasil).toBe(23);
+  });
+
+  it('angka narsisistik', () => {
+    expect(narcissistic(7)).toEqual(true);
+    expect(narcissistic(153)).toEqual(true);
+    expect(narcissistic(1634)).toEqual(true);
+  });
+});
